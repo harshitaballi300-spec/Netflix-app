@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <header class="login-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"
+                class="logo">
+        </header>
+
+        <main class="login-form-wrapper">
+            <h1>Sign Up</h1>
+            <form id="registerForm">
+                <div class="input-container">
+                    <input type="email" id="regEmail" placeholder="Email" required autocomplete="email">
+                </div>
+                <div class="input-container">
+                    <input type="password" id="regPassword" placeholder="Add a password" required
+                        autocomplete="new-password">
+                    <i class="fa-solid fa-eye password-toggle" id="togglePassword"></i>
+                </div>
+                <button type="submit" class="login-btn">Sign Up</button>
+                <div class="login-signup-now">
+                    Already have an account? <a href="login.html">Sign in here</a>.
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
