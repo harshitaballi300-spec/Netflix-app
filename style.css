@@ -25,6 +25,32 @@ body {
     overflow-x: hidden;
 }
 
+/* Demo Project Disclaimer Banner */
+.demo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5a623;
+    color: #000;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 13px;
+    z-index: 9999;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Text Logo */
+.logo-text {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;
@@ -46,8 +72,10 @@ body {
 
 /* Login Page Styles */
 .login-container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    padding-top: 36px;
+    /* offset for demo banner */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://assets.nflxext.com/ffe/siteui/vlv3/5e13e842-8c94-436e-8215-a74421b5be9d/5f0f3e3a-5900-4828-86d1-4191d8479e0a/IN-en-20230508-popsignuptwoweeks-perspective_alpha_website_large.jpg');
     background-size: cover;
     background-position: center;
